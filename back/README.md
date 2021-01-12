@@ -16,4 +16,5 @@ Run server with gunicorn: `gunicorn --bind 0.0.0.0:8080 --workers 1 --threads 8 
 To get base64 output image url (**you should not do this in terminal** 🤐):
 ```bash
 curl -X POST -F "file=@test_image.jpg" "http://0.0.0.0:8080/remove"
+curl -X POST -F "file=@test_image.jpg" "http://localhost:8888/remove" > test_image.txt
 ```
