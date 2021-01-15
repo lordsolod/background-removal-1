@@ -11,3 +11,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get clean && apt-get -y autoremove && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 app:app
+
+#waitress-serve --listen=*:8080 app:app

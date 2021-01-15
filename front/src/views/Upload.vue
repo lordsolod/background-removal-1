@@ -52,7 +52,7 @@
                   dismissible
                 >
                   <span slot="text"
-                    ><strong>Failed!</strong> Clear image and try again.</span
+                    ><strong>Failed!</strong> Clear image and try again...</span
                   >
                 </base-alert>
                 <base-alert
