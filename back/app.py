@@ -48,7 +48,7 @@ def remove():
     output = detect.predict(net, np.array(img))
     output = output.resize((img.size), resample=Image.BILINEAR) # remove resample
 
-    empty_img = Image.new("RGBA", (img.size), (83,40,130))
+    empty_img = Image.new("RGBA", (img.size), (255,255,255)) #BG Color SCB:(83,40,130)
     new_img = Image.composite(img, empty_img, output.convert("L"))
 
     buffer = io.BytesIO()
